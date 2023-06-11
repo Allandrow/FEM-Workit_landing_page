@@ -1,0 +1,117 @@
+@font-face {
+  font-family: 'Manrope';
+  src: url('./assets/fonts/manrope/static/Manrope-Regular.ttf')
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'Fraunces';
+  src: url('./assets/fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf')
+    format('truetype');
+}
+
+:root {
+  --color-primary: #24053e;
+  --color-accent: #44ffa1;
+  --color-secondary: #fcf8ff;
+  --color-hover: #584d62;
+  --color-white: #fff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 2rem;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Manrope';
+  font-size: 18px;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+h2,
+h3,
+h4 {
+  font-family: 'Fraunces';
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+header {
+  background-color: var(--color-primary);
+}
+
+header > .wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+header a {
+  font-size: 1rem;
+  color: var(--color-white);
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+}
+
+header a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  bottom: -3px;
+  left: 0;
+  height: 3px;
+  background-color: var(--color-accent);
+}
+
+a {
+  color: inherit;
+}
+
+@media screen and (min-width: 768px) {
+  header > .wrap {
+    padding: 2rem;
+  }
+}
+
+@media screen and (min-width: 1110px) {
+  header > .wrap {
+    margin: 0 auto;
+    max-width: 1110px;
+  }
+}
