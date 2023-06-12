@@ -16,6 +16,7 @@
   --color-secondary: #fcf8ff;
   --color-hover: #584d62;
   --color-white: #fff;
+  --font-size-headingL: 50px;
 }
 
 *,
@@ -103,13 +104,65 @@ a {
   color: inherit;
 }
 
+.hero {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 2rem;
+  gap: 2rem;
+}
+
+h2 {
+  font-size: var(--font-size-headingL);
+  line-height: 1;
+}
+
+h2 > span {
+  position: relative;
+}
+
+h2 > span:after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-accent);
+  bottom: 3px;
+  left: 0;
+}
+
+main a {
+  display: block;
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.75rem 1.25rem;
+  border: 2px solid var(--color-accent);
+}
+
+main a:hover {
+  background-color: transparent;
+  color: var(--color-accent);
+}
+
 @media screen and (min-width: 768px) {
+  body {
+    --font-size-headingL: 60px;
+  }
+
   header > .wrap {
     padding: 2rem;
   }
 }
 
 @media screen and (min-width: 1110px) {
+  body {
+    --font-size-headingL: 80px;
+  }
   header > .wrap {
     margin: 0 auto;
     max-width: 1110px;
