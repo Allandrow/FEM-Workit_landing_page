@@ -113,6 +113,8 @@ a {
   text-align: center;
   padding-top: 2rem;
   gap: 2rem;
+  position: relative;
+  overflow: hidden;
 }
 
 h2 {
@@ -157,14 +159,37 @@ main a:hover {
   header > .wrap {
     padding: 2rem;
   }
+
+  .hero::before {
+    content: url('assets/images/bg-pattern-1.svg');
+    position: absolute;
+    left: -230px;
+    top: 0;
+  }
+
+  .hero::after {
+    content: url('/assets/images/bg-pattern-2.svg');
+    position: absolute;
+    right: -95px;
+    top: 20%;
+  }
 }
 
 @media screen and (min-width: 1110px) {
   body {
     --font-size-headingL: 80px;
   }
+
   header > .wrap {
     margin: 0 auto;
     max-width: 1110px;
+  }
+
+  .hero::before {
+    left: -140px;
+  }
+
+  .hero::after {
+    right: -50px;
   }
 }
