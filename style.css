@@ -68,10 +68,15 @@ header {
   background-color: var(--color-primary);
   color: var(--color-white);
   padding: 2rem 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
 }
 
 header nav {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   font-size: var(--font-size);
@@ -102,12 +107,28 @@ h1 {
 
   font-size: var(--font-size);
   line-height: var(--font-size);
-  margin-top: 4rem;
   text-align: center;
 }
 
 h1 .underline::after {
   bottom: 3px;
+}
+
+header button {
+  border: none;
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+  padding: 1rem 1.25rem;
+  font-size: var(--font-size);
+  font-weight: bold;
+  border: 1px solid transparent;
+}
+
+header button:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  background-color: transparent;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
