@@ -41,11 +41,7 @@ body {
   font-size: 18px;
 }
 
-img,
-picture,
-video,
-canvas,
-svg {
+img {
   display: block;
   max-width: 100%;
 }
@@ -54,9 +50,7 @@ p,
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
+h4 {
   overflow-wrap: break-word;
 }
 
@@ -71,130 +65,18 @@ ul {
   padding: 0;
 }
 
-header {
-  background-color: var(--color-primary);
-}
-
-header > .wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem 1rem;
-}
-
-header a {
-  font-size: 1rem;
-  color: var(--color-white);
-  text-decoration: none;
-  font-weight: bold;
-  position: relative;
-}
-
-header a::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  bottom: -3px;
-  left: 0;
-  height: 3px;
-  background-color: var(--color-accent);
-}
-
 a {
   color: inherit;
-}
-
-.hero {
-  background-color: var(--color-primary);
-  color: var(--color-white);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 2rem 1rem 0;
-  gap: 2rem;
-  position: relative;
-  overflow: hidden;
-}
-
-.hero img {
-  width: 100%;
-  max-width: 767px;
-}
-
-h2 {
-  font-size: var(--font-size-headingL);
-  line-height: 1;
-}
-
-h2 > span {
-  position: relative;
-}
-
-h2 > span:after {
-  position: absolute;
-  content: '';
-  width: 100%;
-  height: 3px;
-  background-color: var(--color-accent);
-  bottom: 3px;
-  left: 0;
-}
-
-main a {
-  display: block;
-  background-color: var(--color-accent);
-  color: var(--color-primary);
-  text-decoration: none;
-  font-weight: bold;
-  padding: 0.75rem 1.25rem;
-  border: 2px solid var(--color-accent);
-}
-
-main a:hover {
-  background-color: transparent;
-  color: var(--color-accent);
 }
 
 @media screen and (min-width: 768px) {
   body {
     --font-size-headingL: 60px;
   }
-
-  header > .wrap {
-    padding: 2rem;
-  }
-
-  .hero::before {
-    content: url('assets/images/bg-pattern-1.svg');
-    position: absolute;
-    left: -230px;
-    top: 0;
-  }
-
-  .hero::after {
-    content: url('/assets/images/bg-pattern-2.svg');
-    position: absolute;
-    right: -95px;
-    top: 20%;
-  }
 }
 
-@media screen and (min-width: 1110px) {
+@media screen and (min-width: 1440px) {
   body {
     --font-size-headingL: 80px;
-  }
-
-  header > .wrap {
-    margin: 0 auto;
-    max-width: 1110px;
-  }
-
-  .hero::before {
-    left: -140px;
-  }
-
-  .hero::after {
-    right: -50px;
   }
 }
