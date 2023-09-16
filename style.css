@@ -17,6 +17,8 @@
   --color-hover: #584d62;
   --color-white: #fff;
   --font-size: 16px;
+  --curve-size: 2000px;
+  --offset: 90px;
 }
 
 *,
@@ -65,13 +67,25 @@ a {
 }
 
 header {
-  background-color: var(--color-primary);
   color: var(--color-white);
   padding: 2rem 1rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+header::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  width: var(--curve-size);
+  height: var(--curve-size);
+  bottom: 90px;
 }
 
 header nav {
@@ -129,6 +143,14 @@ header button:hover {
   color: var(--color-accent);
   background-color: transparent;
   cursor: pointer;
+}
+
+img[role='presentation'] {
+  display: none;
+}
+
+.hero-img {
+  width: 320px;
 }
 
 @media screen and (min-width: 768px) {
