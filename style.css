@@ -278,6 +278,24 @@ footer ul {
   .hero-img {
     width: 514px;
   }
+
+  .advantages li {
+    align-items: start;
+    padding-left: 2rem;
+    position: relative;
+    text-align: left;
+    justify-content: center;
+  }
+
+  .advantages li::before {
+    left: -2.5rem;
+    position: absolute;
+  }
+
+  .advantages li p {
+    max-width: 50ch;
+    line-height: 1.75rem;
+  }
 }
 
 @media screen and (min-width: 1440px) {
