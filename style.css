@@ -219,7 +219,7 @@ img[role='presentation'] {
   justify-items: center;
 }
 
-.founder img {
+.founder-img {
   width: 281px;
 }
 
@@ -295,6 +295,39 @@ footer ul {
   .advantages li p {
     max-width: 50ch;
     line-height: 1.75rem;
+  }
+
+  .founder {
+    justify-items: start;
+    padding: 5rem 2.5rem 0;
+    position: relative;
+    width: 768px;
+    margin: auto;
+  }
+
+  .founder article {
+    margin: -8.5rem 0 0 11rem;
+    text-align: left;
+    justify-items: start;
+    padding: 3rem;
+  }
+
+  .founder article h3 {
+    font-size: 3rem;
+  }
+
+  .founder p {
+    max-width: 402px;
+  }
+
+  .founder img[role='presentation'] {
+    position: absolute;
+    bottom: -110px;
+    left: calc(50% + 90px);
+  }
+
+  footer {
+    margin-top: 3rem;
   }
 }
 
