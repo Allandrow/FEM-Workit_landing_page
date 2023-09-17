@@ -240,6 +240,20 @@ img[role='presentation'] {
   line-height: 2rem;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-block: 3rem;
+  gap: 3rem;
+}
+
+footer ul {
+  display: flex;
+  gap: 2rem;
+}
+
 @media screen and (min-width: 768px) {
 }
 
