@@ -131,7 +131,7 @@ h1 .underline::after {
   bottom: 3px;
 }
 
-header button {
+.button {
   border: none;
   background-color: var(--color-accent);
   color: var(--color-primary);
@@ -139,9 +139,10 @@ header button {
   font-size: var(--font-size);
   font-weight: bold;
   border: 1px solid transparent;
+  text-decoration: none;
 }
 
-header button:hover {
+.button:hover {
   border-color: var(--color-accent);
   color: var(--color-accent);
   background-color: transparent;
@@ -161,11 +162,13 @@ img[role='presentation'] {
   gap: 2rem;
   padding: 0 1rem;
   position: relative;
-  padding-block: 5rem;
+  margin-top: -10rem;
+  padding: 15rem 0 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .advantages::after {
@@ -208,6 +211,33 @@ img[role='presentation'] {
   font-size: 1.25rem;
   align-items: center;
   justify-content: center;
+}
+
+.founder {
+  padding: 5rem 0 0;
+  display: grid;
+  justify-items: center;
+}
+
+.founder img {
+  width: 281px;
+}
+
+.founder article {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 2.5rem 1.75rem;
+  margin: -3.5rem 1rem 0;
+  display: grid;
+  gap: 1.5rem;
+  text-align: center;
+  justify-items: center;
+  line-height: 1.75;
+}
+
+.founder article h3 {
+  font-size: 2rem;
+  line-height: 2rem;
 }
 
 @media screen and (min-width: 768px) {
